@@ -1,0 +1,36 @@
+body {
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+}
+
+button {
+    flex: 1;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 400px;
+    width: 300px;
+    padding: 2px;
+}
+
+.display {
+    flex-direction: row-reverse;
+    font-size: 60px;
+    text-align: right;    
+}
+
+.container > div {
+    flex: 1;
+    gap: 2px;
+}
