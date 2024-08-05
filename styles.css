@@ -34,7 +34,8 @@ button {
     text-align: right;
     background-color: black;
     color: white;
-    padding: 4px 4px;
+    padding: 4px 12px;
+    overflow: auto;
 }
 
 .container > div {
