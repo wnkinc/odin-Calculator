@@ -67,16 +67,11 @@ function calculate(array) {
     if(operator === '/') total = divide(num1, num2);
 
     function roundIfExceeds(num, maxDecimalPlaces) {
-        // Convert number to string and split by the decimal point
         let [integerPart, decimalPart] = num.toString().split('.');
-        
-        // Check if decimal part exists and exceeds the maxDecimalPlaces
         if (decimalPart && decimalPart.length > maxDecimalPlaces) {
             const factor = Math.pow(10, maxDecimalPlaces);
             return Math.round(num * factor) / factor;
         }
-    
-        // Return the number as is if it does not exceed the maxDecimalPlaces
         return num;
     }
 
