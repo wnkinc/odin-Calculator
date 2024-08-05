@@ -7,10 +7,12 @@ body {
 
 div {
     display: flex;
+    background-color: black;
 }
 
 button {
     flex: 1;
+    border-radius: 10px;
 }
 
 .container {
@@ -22,15 +24,37 @@ button {
     height: 400px;
     width: 300px;
     padding: 2px;
+    flex-shrink: 0;
+    border-radius: 15px;
 }
 
 .display {
     flex-direction: row-reverse;
     font-size: 60px;
-    text-align: right;    
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
 }
 
 .container > div {
     flex: 1;
     gap: 2px;
+}
+
+.left {
+    background-color: orange;
+}
+
+.zero {
+    flex: 2.31;
+    background-color: rgb(179, 179, 179);
+}
+
+.gray {
+    background-color: rgb(179, 179, 179);
+}
+
+.darkGray {
+    background: rgb(115, 114, 114);
 }
